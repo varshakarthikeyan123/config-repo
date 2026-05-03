@@ -1,17 +1,9 @@
 server:
-  port: 8080
+  port: 8082
 
 spring:
   application:
-    name: API-GATEWAY
-
-  cloud:
-    gateway:
-      routes:
-        - id: user-service
-          uri: lb://USER-SERVICE
-          predicates:
-            - Path=/api/users/**
+    name: AUTH-SERVICE
 
 eureka:
   client:
